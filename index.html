@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.AUTO X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">STAND M.AUTO <span>X</span></div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#modelos">Modelos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>VELOCIDADE E QUALIDADE NUM SÓ LUGAR!</h1>
+        <p>compra e venda de automóvel</p>
+        <div class="search-hero">
+            <input type="text" id="search-hero" placeholder="Pesquisar modelo...">
+            <button id="btn-search">Pesquisar</button>
+        </div>
+
+    </section>
+
+    <section id="sobre" class="about-section">
+
+        <div class="about-container">
+
+            <!-- Parte superior -->
+            <div class="about-top">
+
+                <div class="about-image">
+                    <img src="./img/model.png" alt="M.AUTO X - Credibilidade e Confiança">
+                </div>
+
+                <div class="about-text">
+                    <h2>STAND M.AUTO <span>X</span></h2>
+
+                    <p>
+                        Na M.AUTO X, somos especialistas em compra e venda de veículos,
+                        oferecendo transparência, segurança e confiança em cada negociação.
+                    </p>
+
+                    <p>
+                        Selecionamos apenas veículos de procedência confiável e garantimos
+                        atendimento personalizado do início ao fim do processo.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Benefícios -->
+            <div class="about-benefits">
+
+                <div class="benefit-card">
+                    <h3>18 Meses de Garantia</h3>
+                    <p>Segurança total em sua compra com garantia estendida.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Revisão Completa</h3>
+                    <p>Todos os veículos passam por inspeção técnica rigorosa.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Parcelamento Facilitado</h3>
+                    <p>Planos acessíveis e sem entrada para facilitar sua conquista.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="modelos">
+        <h2>MODELOS DISPONÍVEIS</h2>
+        <input type="text" id="search" placeholder="Pesquisar modelo...">
+        <div id="lista-modelos" class="cards"></div>
+    </section>
+
+    <div id="detalhes-modelos"></div>
+
+    <footer id="contato" class="footer">
+        <div class="footer-container">
+            <!-- Formulário de contato -->
+            <div class="footer-form">
+                <h3>Fale Conosco</h3>
+                <p>Envie sua mensagem e entraremos em contato o mais rápido possível.</p>
+                <form id="contato-form">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="telefone" placeholder="Telefone" required>
+                    <textarea name="mensagem" placeholder="Sua mensagem..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+
+            <!-- Informações e redes sociais -->
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>Email: contato@mautox.com</p>
+                <p>Telefone: (00) 0000-0000</p>
+                <div class="social">
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="copy">© 2026 M.AUTO X - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">
+        <img src="./img/icons8-whatsapp-logo-94.png" alt="WhatsApp">
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const botaoWhatsapp = document.querySelector(".btn-whatsapp");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 100) {
+                    botaoWhatsapp.classList.add("ativo");
+                } else {
+                    botaoWhatsapp.classList.remove("ativo");
+                }
+            });
+
+        });
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
